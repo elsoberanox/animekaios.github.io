@@ -65,70 +65,17 @@
 
 
 <!--player end-->
-<div class="container">
 
 
-
-
-  <div class="jumbotron">
-<video id="videoplaylist" width="100%" preload="auto" poster='http://harry.zone/assets/oceans-clip.jpg' tabindex="0" controls >
-  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4">
-</video>
-
-<ul id="playlist">
-        <li class="active">
-           <a href="https://7e60-177-227-76-204.ngrok.io/kaiosapptk/cap1.mp4">
-             Capitulo 1
-           </a>
-        </li>
-        <li>
-            <a href="https://ia601505.us.archive.org/25/items/anime-online-ninja-tsukimichi-bd-latino-02/%5BAnimeOnlineNinja%5D%20Tsukimichi%20BD%20Latino%2002.ia.mp4">
-                Capitulo 2
-            </a>
-        </li>
-        <li>
-            <a href="https://ia601506.us.archive.org/3/items/anime-online-ninja-tsukimichi-bd-latino-03/%5BAnimeOnlineNinja%5D%20Tsukimichi%20BD%20Latino%2003.ia.mp4">
-                Capitulo 3
-            </a>
-        </li>
-      
-              <li>
-            <a href="https://ia801407.us.archive.org/30/items/anime-online-ninja-tsukimichi-bd-latino-04/%5BAnimeOnlineNinja%5D%20Tsukimichi%20BD%20Latino%2004.ia.mp4">
-                Capitulo 4
-            </a>
-        </li>
-
-    </ul>
-
-
-
-
-
-<Select id="colorselector">
-   <option value="red">Red</option>
-   <option value="yellow">Yellow</option>
-   <option value="blue">Blue</option>
-</Select>
-<div id="red" class="colors" style="display:none"> aer</div>
-<div id="yellow" class="colors" style="display:none"> yellow.. </div>
-<div id="blue" class="colors" style="display:none"> blue.. </div>
-
-
-
-
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      ...
-    </div>
-    <div class="col-sm-4">
-      ...
-    </div>
-    <div class="col-sm-4">
-    ...
-    </div>
-  </div>
+<div class="perfiles">
+    <img src="https://images6.alphacoders.com/102/thumb-1920-1027254.jpg">
 </div>
+
+
+<div class="perfiles">
+    asd
+</div>
+
 
 </body>
 </html>
@@ -145,17 +92,29 @@
     @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
+.perfiles {
+    background-color: white;
+    margin-top: 5px;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.perfiles img {
+    width: 100%;
+   max-height: 100%;
+
+}
+
 *,
 *:before,
 *:after {
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+html, body {
+     min-height: 100%;
 }
 
 body {
