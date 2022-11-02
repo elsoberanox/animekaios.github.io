@@ -67,15 +67,12 @@
 <!--player end-->
 
 
-<div class="perfiles">
-    <img src="https://images6.alphacoders.com/102/thumb-1920-1027254.jpg">
+
+<div tabIndex="1" class="contenedorz">
+  <img src="https://wallpapercave.com/wp/wp9884511.jpg" />
+  <div class="texto-encima">Texto asdasd as dasd as asd asd as asdasdasdasd </div>
+  <div class="centrado">SAITAMA</div>
 </div>
-
-
-<div class="perfiles">
-    asd
-</div>
-
 
 </body>
 </html>
@@ -92,20 +89,33 @@
     @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
-.perfiles {
-    background-color: white;
-    margin-top: 5px;
-    width: 100%;
-    height: 120px;
+.contenedorz{
+    position: relative;
+    display: inline-block;
     text-align: center;
-    overflow: hidden;
-}
-
-.perfiles img {
+    height: 200px;
     width: 100%;
-   max-height: 100%;
-
+    overflow: hidden;
+    padding: 10px;
 }
+
+.contenedorz img{
+    width: 100%;
+    height: 200px;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 70%;
+    left: 20px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 *,
 *:before,
