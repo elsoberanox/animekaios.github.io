@@ -67,23 +67,22 @@
 <!--player end-->
 
 <div class="containerz">
-  <div class="panel active" style="background-image: url('https://images3.alphacoders.com/106/thumb-1920-1061065.png')">
-    <h3>What do you find so entertaining?</h3>
-  </div>
 
-  <div class="panel" style="background-image: url('https://wallpaperaccess.com/full/5283070.jpg')">
-    <h3>What's so amusing about this?</h3>
-  </div>
-  <div class="panel" style="background-image: url('https://images8.alphacoders.com/103/thumb-1920-1034735.png')">
-    <h3>What do you take life for, exactly?</h3>
-  </div>
-  <div class="panel" style="background-image: url('https://wallpaperaccess.com/full/5112296.jpg')">
-    <h3>Why can't you understand?</h3>
-  </div>
-  <div class="panel" style="background-image: url('https://wallpaperaccess.com/full/3518463.jpg')">
-    <h3>How can you forget?</h3>
-  </div>
+  <figure class="menu-card">
+    <img src="https://wallpapercave.com/wp/wp9884511.jpg" />
+    <div class="date">date</div></i>
+    <figcaption>
+      <h2>Catchy Title</h2>
+      <h3 class="subtitle">Descriptive subtitle</h3>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+      <button>View story</button>
+    </figcaption><a href="#"></a>
+  </figure>
+
 </div>
+
 
 
 
@@ -95,23 +94,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--scrip -->
-
-<script type="text/javascript">
-    const panels = document.querySelectorAll(".panel");
-
-panels.forEach((panel) => {
-  panel.addEventListener("click", () => {
-    removeActiveClasses();
-    panel.classList.add("active");
-  });
-});
-
-const removeActiveClasses = () => {
-  panels.forEach((panel) => {
-    panel.classList.remove("active");
-  });
-};
 
     
 </script>
@@ -125,56 +107,117 @@ const removeActiveClasses = () => {
     @import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
 
-
-.containerz {
-  display: flex;
-  justify-content: center;
-  width: 90vw;
+.containerz{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
 }
 
-.panel {
-  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.1);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh;
-  border-radius: 30px;
+figure.menu-card {
   color: #fff;
-  cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
   position: relative;
-  transition: flex 0.5s ease-in;
+  overflow: hidden;
+  width: 100%;
+  background-color: #262626;
+  text-align: left;
+  font-size: 16px;
+  opacity: 0.95;
 }
+figure.menu-card {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+figure.menu-card img {
+  max-width: 100%;
 
-.panel h3 {
-  font-size: calc(24 / 16 * 1rem);
+  vertical-align: top;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+figure.menu-card figcaption {
+  padding: 25px;
+  position: relative;
+}
+figure.menu-card .date {
+  background-color: rgba(60, 59, 110, 0.5);
+  top: 0px;
+  color: #fff;
+  right: 0px;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  text-align: center;
+  font-size: 21px;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+figure.menu-card h2 {
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
   margin: 0;
-  opacity: 0;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+figure.menu-card h3 {
+  line-height: 1;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+figure.menu-card p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.25em;
+  height: 90px;
+  overflow: hidden;
+}
+figure.menu-card button {
+  border: medium none;
+  padding: 10px 20px;
+  background-color: rgba(60, 59, 110, 0.95);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: 1px solid white;
+  width: 100%;
+}
+figure.menu-card a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.menu-card:hover img,
+figure.menu-card.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.panel.active {
-  flex: 5;
+figure.menu-card:hover button,
+figure.menu-card.hover button {
+  background-color: rgba(678, 34, 52, 0.85);
+  border: 1px solid white;
 }
 
-.panel.active h3 {
-  opacity: 1;
-  transition: all 0.5s ease-in 0.4s;
-}
 
-@media (max-width: 480px) {
-  .container {
-    width: 100vw;
-  }
+figure {margin:0;padding:0}
+figure img {width:100%;}
 
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  }
-}
 
 
 *,
